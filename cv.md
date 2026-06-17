@@ -44,7 +44,7 @@ Aspiring to contribute at VP level — shaping strategy, cultivating engineering
 
 **DevSecOps & Code Quality:** SonarQube, JFrog Artifactory, SAST/DAST/IAST scanning, UrbanCode Deploy, Jenkins, Azure DevOps, shift-left security integration
 
-**RPA & Automation:** UiPath, Automation Anywhere, Python Automation, CPA/IPA Frameworks
+**RPA & Automation:** Blue Prism, UiPath, Automation Anywhere, Python Automation, CPA/IPA Frameworks
 
 **Data & BI:** SAP HANA, Tableau, Power BI
 
