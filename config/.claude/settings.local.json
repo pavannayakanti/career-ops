@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/pavanay/Documents/github/career-ops/**)",
+      "Bash(node update-system.mjs check)",
+      "Bash(ls /Users/pavanay/Documents/github/career-ops/modes/_profile*)",
+      "WebFetch(domain:www.linkedin.com)",
+      "Bash(node cv-sync-check.mjs)",
+      "WebSearch",
+      "Bash(mkdir -p /Users/pavanay/Documents/github/career-ops/output)",
+      "Bash(node generate-pdf.mjs /tmp/cv-pavan-kumar-nayakanti-brillio.html output/cv-pavan-kumar-nayakanti-brillio-2026-04-11.pdf --format=a4)",
+      "Bash(node generate-pdf.mjs /tmp/cv-pavan-kumar-nayakanti-citi.html output/cv-pavan-kumar-nayakanti-citi-2026-04-11.pdf --format=a4)",
+      "Bash(node generate-pdf.mjs /tmp/cv-pavan-kumar-nayakanti-apple-2026-04-11.html output/cv-pavan-kumar-nayakanti-apple-2026-04-11.pdf)",
+      "Bash(cat /Users/pavanay/Documents/github/career-ops/batch/tracker-additions/*.tsv)",
+      "Bash(node generate-pdf.mjs /tmp/cv-pavan-kumar-nayakanti-morgan-stanley.html output/cv-pavan-kumar-nayakanti-morgan-stanley-2026-04-12.pdf --format=a4)",
+      "Bash(node generate-pdf.mjs /tmp/cv-pavan-kumar-nayakanti-vertafore.html output/cv-pavan-kumar-nayakanti-vertafore-2026-04-12.pdf --format=a4)"
+    ]
+  }
+}
