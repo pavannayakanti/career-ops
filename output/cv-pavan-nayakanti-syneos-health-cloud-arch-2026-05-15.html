@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PAVAN KUMAR NAYAKANTI — CV</title>
+<style>
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('../templates/fonts/space-grotesk-latin.woff2') format('woff2');
+    font-weight: 300 700; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('../templates/fonts/space-grotesk-latin-ext.woff2') format('woff2');
+    font-weight: 300 700; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('../templates/fonts/dm-sans-latin.woff2') format('woff2');
+    font-weight: 100 1000; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('../templates/fonts/dm-sans-latin-ext.woff2') format('woff2');
+    font-weight: 100 1000; font-style: normal; font-display: swap;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { font-family: 'DM Sans', sans-serif; font-size: 11px; line-height: 1.5; color: #1a1a2e; background: #ffffff; }
+  .page { width: 100%; max-width: 210mm; margin: 0 auto; padding: 2px 0; }
+
+  .header { margin-bottom: 20px; }
+  .header h1 { font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #1a1a2e; letter-spacing: -0.02em; margin-bottom: 6px; line-height: 1.1; }
+  .header-gradient { height: 2px; background: linear-gradient(to right, hsl(187, 74%, 32%), hsl(270, 70%, 45%)); border-radius: 1px; margin-bottom: 10px; }
+  .contact-row { display: flex; flex-wrap: wrap; gap: 8px 14px; font-size: 10.5px; line-height: 1.4; color: #555; }
+  .contact-row a { color: #555; text-decoration: none; }
+  .contact-row .separator { color: #ccc; }
+
+  .section { margin-bottom: 18px; }
+  .section-title { font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: hsl(187, 74%, 32%); border-bottom: 1.5px solid #e2e2e2; padding-bottom: 4px; margin-bottom: 10px; line-height: 1.2; }
+  .summary-text { font-size: 11px; line-height: 1.7; color: #2f2f2f; }
+  a { white-space: nowrap; }
+
+  .competencies-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+  .competency-tag { font-size: 10px; font-weight: 500; color: hsl(187, 74%, 28%); background: hsl(187, 40%, 95%); padding: 4px 10px; border-radius: 3px; border: 1px solid hsl(187, 40%, 88%); }
+
+  .job { margin-bottom: 14px; }
+  .job-header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 4px; }
+  .job-company { font-family: 'Space Grotesk', sans-serif; font-size: 12.5px; font-weight: 600; color: hsl(270, 70%, 45%); }
+  .job-period { font-size: 10.5px; color: #777; white-space: nowrap; }
+  .job-role { font-size: 11px; font-weight: 600; color: #333; margin-bottom: 6px; }
+  .job ul { padding-left: 18px; margin-top: 6px; }
+  .job li { font-size: 10.5px; line-height: 1.6; color: #333; margin-bottom: 4px; }
+  .job li strong { font-weight: 600; }
+
+  .project { margin-bottom: 12px; }
+  .project-title { font-family: 'Space Grotesk', sans-serif; font-size: 11.5px; font-weight: 600; color: hsl(270, 70%, 45%); }
+  .project-badge { font-size: 9px; font-weight: 500; color: hsl(187, 74%, 32%); background: hsl(187, 40%, 95%); padding: 1px 6px; border-radius: 2px; margin-left: 6px; }
+  .project-desc { font-size: 10.5px; color: #444; margin-top: 3px; line-height: 1.55; }
+
+  .edu-item { margin-bottom: 8px; }
+  .edu-header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .edu-title { font-weight: 600; font-size: 11px; color: #333; }
+  .edu-org { color: hsl(270, 70%, 45%); font-weight: 500; }
+  .edu-year { font-size: 10px; color: #777; white-space: nowrap; }
+
+  .cert-item { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 6px; }
+  .cert-title { font-size: 10.5px; font-weight: 500; color: #333; }
+  .cert-org { color: hsl(270, 70%, 45%); }
+  .cert-year { font-size: 10px; color: #777; white-space: nowrap; }
+
+  .skill-item { font-size: 10.5px; color: #444; margin-bottom: 5px; }
+  .skill-category { font-weight: 600; color: #333; }
+
+  @media print { body { -webkit-print-color-adjust: exact; print-color-adjust: exact; } .page { padding: 0; } }
+  .avoid-break, .job, .project, .edu-item, .cert-item { break-inside: avoid; page-break-inside: avoid; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header avoid-break">
+    <h1>PAVAN KUMAR NAYAKANTI</h1>
+    <div class="header-gradient"></div>
+    <div class="contact-row">
+      <span>+91-9440493097</span>
+      <span class="separator">|</span>
+      <span>pavan.nayakanti@hotmail.com</span>
+      <span class="separator">|</span>
+      <a href="https://www.linkedin.com/in/pavan-nayakanti/">linkedin.com/in/pavan-nayakanti</a>
+      <span class="separator">|</span>
+      <a href="https://github.com/pavannayakanti">github.com/pavannayakanti</a>
+      <span class="separator">|</span>
+      <span>Hyderabad, India</span>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="section avoid-break">
+    <div class="section-title">Professional Summary</div>
+    <div class="summary-text">Cloud architect and platform engineering leader with 20+ years designing multi-cloud reference architectures, HA/DR patterns, resiliency frameworks, and compliance guardrails across regulated FinTech and banking environments (AWS, Azure, GCP). Author of the Cloud Platform Maturity Index (CPMI) -- an enterprise cloud architecture framework defining capability standards and guardrails deployed across three major banking clients. Proven track record translating architectural intent into operational reality: HA/DR designed upfront into CDK-driven AWS migrations, resiliency validated through Chaos Engineering (Keptn), and compliance encoded as CI/CD guardrails (SOX/GDPR). Strong multi-cloud certifications (AZ-305, SAA-C01, GCP PCA) and 20+ years of hands-on production experience backing every architectural recommendation.</div>
+  </div>
+
+  <!-- COMPETENCIES -->
+  <div class="section">
+    <div class="section-title">Core Competencies</div>
+    <div class="competencies-grid">
+      <span class="competency-tag">Multi-Cloud Architecture (AWS / Azure / GCP)</span>
+      <span class="competency-tag">Cloud Platform Maturity Index (CPMI) -- Framework Author</span>
+      <span class="competency-tag">HA/DR &amp; Availability Pattern Design</span>
+      <span class="competency-tag">Resiliency Engineering &amp; Chaos Engineering (Keptn)</span>
+      <span class="competency-tag">Landing Zone Design &amp; Cloud Guardrails</span>
+      <span class="competency-tag">IaC Standards (Terraform, AWS CDK)</span>
+      <span class="competency-tag">Compliance-as-Code (SOX, GDPR)</span>
+      <span class="competency-tag">Architecture Governance &amp; Design Standards</span>
+      <span class="competency-tag">SLO/SLA Definition &amp; Dependency Modeling</span>
+      <span class="competency-tag">DevSecOps &amp; Security Architecture</span>
+      <span class="competency-tag">SRE -- Observability, On-Call, Postmortems</span>
+      <span class="competency-tag">Executive &amp; CTO-Level Stakeholder Influence</span>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Work Experience</div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">IRIS Software</span>
+        <span class="job-period">Sep 2020 -- Present</span>
+      </div>
+      <div class="job-role">Sr. Specialist -- Cloud Practice &amp; SRE Lead &nbsp;<span style="font-weight:400;color:#888;">| India &nbsp;(Clients: ADP, Charles Schwab, BMO)</span></div>
+      <ul>
+        <li><strong>Cloud Platform Maturity Index (CPMI) -- Architecture Framework:</strong> Designed and deployed the CPMI -- an enterprise cloud architecture framework defining capability standards, compliance guardrails, and maturity thresholds across three major banking clients (ADP, Charles Schwab, BMO). Drove measurable improvement in cloud security, efficiency, and capability maturity organisation-wide.</li>
+        <li><strong>HA/DR Architecture -- Designed Upfront (BMO):</strong> Designed HA/DR architecture for BMO CCB cloud migration from day one -- multi-AZ ECS Fargate and Lambda deployment via AWS CDK with automated failover, Disaster Recovery objectives defined upfront and tested during migration. Led end-to-end on-premise to AWS migration with no production incidents during cutover.</li>
+        <li><strong>Resiliency Validation via Chaos Engineering (ADP):</strong> Established a Chaos Engineering programme (Keptn) as the architectural validation layer for ADP's SRE platform -- fault injection experiments across network, compute, and dependency tiers; documented failure modes and hardened resiliency patterns before production traffic. Proactively identified fault scenarios that informed platform redesigns.</li>
+        <li><strong>SLO/SLA Definition &amp; Observability Architecture (ADP):</strong> Defined SLOs, SLIs, and error budgets across multi-client cloud platforms; deployed Prometheus, Grafana, Dynatrace, and MS Application Insights for full-stack observability with AlertManager-driven on-call pipelines. Scaled ADP's SRE organisation from 4 to 40 engineers; reduced MTTR 40%+ through AIOps-driven automated remediation.</li>
+        <li><strong>GCP Landing Zone Architecture (Charles Schwab):</strong> Led GCP landing zone preparation and workload migration POCs for Charles Schwab -- evaluated GCP-native services for cloud-native deployments; executed cross-platform artifact deployment alignment across TD Ameritrade and Charles Schwab environments as part of the merger integration programme.</li>
+        <li><strong>FinOps &amp; Cloud Cost Architecture (BMO):</strong> Drove AWS FinOps across BMO estate -- rightsized workloads to match actual demand, identified unused resources, reduced cloud waste. GenAI risk assistants deployed on AWS Bedrock via event-driven pipelines.</li>
+        <li><strong>DevSecOps as a Service:</strong> Architected enterprise-grade DevOps as a Service platform -- CI/CD standards, IaC blueprints, observability patterns, and security guardrails delivered as reusable reference implementations across clients.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">IRIS Software</span>
+        <span class="job-period">Jun 2018 -- Sep 2020</span>
+      </div>
+      <div class="job-role">Automation Technology Specialist &nbsp;<span style="font-weight:400;color:#888;">| Toronto, Canada &nbsp;(Client: Royal Bank of Canada Insurance)</span></div>
+      <ul>
+        <li><strong>Compliance Architecture -- Guardrails in CI/CD (SOX/GDPR):</strong> Translated SOX and GDPR compliance requirements into enforceable CI/CD guardrails across 250+ RBC applications -- SAST/DAST/IAST gates (SonarQube, JFrog), approval workflows, and audit trail pipelines baked into Jenkins/UrbanCode/GitHub. Zero manual compliance workarounds. Application onboarding reduced from 5 weeks to 5 hours (98% reduction).</li>
+        <li><strong>DORA Framework &amp; Architecture Standards:</strong> Established DORA as the engineering health standard across 60+ RBC teams via Azure DevOps -- Deployment Frequency, Lead Time for Changes, Change Failure Rate, and MTTR as shared architecture metrics. Measurable improvement in delivery performance reviewed quarterly with VP stakeholders.</li>
+        <li>Established SRE principles and observability architecture standards within RBC's DevSecOps programme -- incident classification frameworks, reliability-focused deployment gates, and Splunk log aggregation pipelines across 250+ applications.</li>
+        <li>Led enterprise migration of 250+ applications across 60+ teams from CA SCM/Harvest to GitHub; contributed to ~$200K in new project acquisitions through pre-sales and architecture leadership.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">IRIS Software</span>
+        <span class="job-period">Feb 2017 -- Jun 2018</span>
+      </div>
+      <div class="job-role">Automation Architect &nbsp;<span style="font-weight:400;color:#888;">| Toronto, Canada &nbsp;(Clients: Insurance &amp; Capital Markets)</span></div>
+      <ul>
+        <li>Designed fault-tolerant, container-orchestrated deployment architectures using Kubernetes and Helm -- zero-downtime rollout patterns with RBAC, resource governance, and dependency isolation for capital markets platforms.</li>
+        <li>Led RPA architecture and practice delivery -- 80+ applications, 250+ components across heterogeneous stacks. Contributed to $478K SOW closure and $180K Capital Markets engagement.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">TechMahindra Pvt. Ltd.</span>
+        <span class="job-period">Jul 2015 -- Feb 2017</span>
+      </div>
+      <div class="job-role">Technology Manager &nbsp;<span style="font-weight:400;color:#888;">| Noida, India &nbsp;(Client: Adobe)</span></div>
+      <ul>
+        <li>Architected and delivered zero-downtime data centre relocation for Adobe -- full migration plan, dependency mapping, cutover execution, and business continuity across all production workloads with no service disruption.</li>
+        <li>Led SAP HANA upgrades, Informatica-to-SQL Server data migration (schema redesign, ETL re-engineering, enterprise-scale data validation), and platform modernisation.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Microsoft Corporation</span>
+        <span class="job-period">Jul 2007 -- Dec 2014</span>
+      </div>
+      <div class="job-role">Sr. SDET -- QA, Automation &amp; Production Engineering &nbsp;<span style="font-weight:400;color:#888;">| India</span></div>
+      <ul>
+        <li>Full production ownership of Sales &amp; Marketing platforms (US, EMEA, APAC) -- 99.99% uptime over 7 years. Owned all non-functional architecture objectives: performance, availability, scalability, security across network, infrastructure, and application tiers. Supported 200% user growth through self-healing architectures and cloud migration with no reliability degradation.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- KEY ARCHITECTURE INITIATIVES -->
+  <div class="section avoid-break">
+    <div class="section-title">Key Architecture Initiatives</div>
+
+    <div class="project">
+      <span class="project-title">Cloud Platform Maturity Index (CPMI) -- Enterprise Architecture Framework</span>
+      <span class="project-badge">Reference Architecture -- AWS / Azure / GCP -- 3 Clients</span>
+      <div class="project-desc">Designed the CPMI -- an enterprise cloud architecture framework defining capability standards, compliance guardrails, and maturity thresholds. Deployed across ADP, Charles Schwab, and BMO; drove measurable cloud security, efficiency, and capability maturity improvements. Encoded as reusable reference implementations for adoption without mandate.</div>
+    </div>
+
+    <div class="project">
+      <span class="project-title">BMO AWS Migration -- HA/DR Designed Upfront</span>
+      <span class="project-badge">AWS CDK -- ECS Fargate -- Lambda -- Multi-AZ -- DR</span>
+      <div class="project-desc">Designed HA/DR architecture from day one for BMO CCB cloud migration -- multi-AZ ECS Fargate and Lambda via CDK with automated failover and defined recovery objectives. Full on-premise-to-AWS migration delivered with zero production incidents during cutover.</div>
+    </div>
+
+    <div class="project">
+      <span class="project-title">Resiliency Architecture Validation -- Chaos Engineering (ADP)</span>
+      <span class="project-badge">Keptn -- Fault Injection -- Dependency Modeling -- SRE</span>
+      <div class="project-desc">Established Chaos Engineering (Keptn) as the validation layer for ADP's platform resiliency architecture. Fault injection experiments across network, compute, and dependency tiers; documented failure modes and remediation patterns; hardened architectures before production traffic. MTTR reduced 40%+.</div>
+    </div>
+
+    <div class="project">
+      <span class="project-title">Compliance Guardrails in CI/CD -- RBC (250+ Apps, SOX/GDPR)</span>
+      <span class="project-badge">Compliance-as-Code -- DevSecOps -- Azure DevOps</span>
+      <div class="project-desc">Translated SOX and GDPR requirements into enforceable pipeline guardrails across 250+ RBC applications -- SAST/DAST/IAST scanning, approval workflows, and audit trail automation. Zero manual workarounds. Application onboarding reduced from 5 weeks to 5 hours.</div>
+    </div>
+
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section avoid-break">
+    <div class="section-title">Education</div>
+    <div class="edu-item">
+      <div class="edu-header">
+        <span class="edu-title">Masters in Artificial Intelligence &nbsp;<span class="edu-org">-- Woolf University</span></span>
+        <span class="edu-year">2024</span>
+      </div>
+    </div>
+    <div class="edu-item">
+      <div class="edu-header">
+        <span class="edu-title">General Management Program (GMP) &nbsp;<span class="edu-org">-- ISB Hyderabad</span></span>
+        <span class="edu-year">2022</span>
+      </div>
+    </div>
+    <div class="edu-item">
+      <div class="edu-header">
+        <span class="edu-title">M.Sc in Computer Science &nbsp;<span class="edu-org">-- Osmania University</span></span>
+        <span class="edu-year">2002</span>
+      </div>
+    </div>
+    <div class="edu-item">
+      <div class="edu-header">
+        <span class="edu-title">B.Sc in Electronics &nbsp;<span class="edu-org">-- Kakatiya University</span></span>
+        <span class="edu-year">2000</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="section avoid-break">
+    <div class="section-title">Certifications</div>
+    <div class="cert-item">
+      <span class="cert-title">Microsoft Certified: Azure Solutions Architect Expert <span class="cert-org">(AZ-305)</span></span>
+      <span class="cert-year">2026</span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">AWS Certified Solutions Architect -- Associate <span class="cert-org">(SAA-C01)</span></span>
+      <span class="cert-year">2026</span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">Google Cloud Certified -- Professional Cloud Architect <span class="cert-org">(PCA)</span></span>
+      <span class="cert-year">2026</span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">Certified Kubernetes Application Developer <span class="cert-org">(CKAD)</span></span>
+      <span class="cert-year">2025</span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">Certified SRE <span class="cert-org">(iSRE)</span></span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">Microsoft Certified: Azure AI Engineer Associate <span class="cert-org">(AI-102)</span></span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">ITIL® Certificate in IT Service Operations</span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">PMI Agile Certified Professional <span class="cert-org">(PMI-ACP)</span></span>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section avoid-break">
+    <div class="section-title">Technical Skills</div>
+    <div class="skill-item"><span class="skill-category">Cloud Architecture:</span> AWS (AZ-305), Azure (AZ-305), GCP (PCA) -- multi-cloud reference architectures, landing zone design, PaaS patterns, multi-region HA/DR, cloud guardrails; IaC standards (Terraform, AWS CDK, Helm)</div>
+    <div class="skill-item"><span class="skill-category">Resiliency &amp; Availability:</span> SLI/SLO/SLA definition, Error Budgets, Chaos Engineering (Keptn), self-healing frameworks, dependency modeling, fault injection validation, MTTR governance</div>
+    <div class="skill-item"><span class="skill-category">Compliance &amp; Security Architecture:</span> Compliance-as-code (SOX, GDPR); DevSecOps guardrails (SAST/DAST/IAST, SonarQube, JFrog); ITIL-aligned change governance; audit trail automation; network segmentation and least-privilege IAM (Azure, AWS)</div>
+    <div class="skill-item"><span class="skill-category">Observability &amp; Platform Standards:</span> Prometheus + AlertManager, Grafana, Dynatrace, MS Application Insights / Azure Log Analytics, Splunk; DORA metrics; architecture governance frameworks (CPMI)</div>
+    <div class="skill-item"><span class="skill-category">Container &amp; Delivery Platform:</span> Kubernetes (CKAD), Docker, Helm, Azure DevOps, GitHub Actions, Jenkins; CI/CD standards and reusable pipeline templates</div>
+    <div class="skill-item"><span class="skill-category">AI &amp; Automation:</span> GenAI (AWS Bedrock, Azure AI), AIOps; Python, Bash, PowerShell, Go; MSc in Artificial Intelligence</div>
+  </div>
+
+</div>
+</body>
+</html>

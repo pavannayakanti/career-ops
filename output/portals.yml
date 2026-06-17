@@ -1,0 +1,591 @@
+# Career-Ops Portal Scanner Configuration
+# Profile: Pavan Kumar Nayakanti
+# Target: VP / Director / Principal — SRE, Platform Engineering, Cloud, DevOps, Reliability
+# Base: Hyderabad, India | Open to: Remote-global, APAC, EMEA, relocation
+
+# -- Title filter --
+# At least 1 positive must match AND 0 negatives must match (case-insensitive).
+
+title_filter:
+  positive:
+    # -- SRE & Reliability --
+    - "Site Reliability"
+    - "SRE"
+    - "Reliability Engineer"
+    - "Reliability Engineering"
+    - "Resilience"
+    - "Incident Management"
+    - "Incident Response"
+    - "Recovery Lead"
+    - "MTTR"
+    # -- Platform Engineering --
+    - "Platform Engineer"
+    - "Platform Engineering"
+    - "Staff Engineer"
+    - "Principal Engineer"
+    - "Infrastructure Engineer"
+    - "Cloud Engineer"
+    - "Cloud Architect"
+    - "Cloud Platform"
+    - "Infrastructure Architect"
+    # -- DevOps & Automation --
+    - "DevOps"
+    - "DevSecOps"
+    - "Automation Architect"
+    - "Automation Engineer"
+    - "CI/CD"
+    - "Release Engineer"
+    - "Build Engineer"
+    # -- Observability & AIOps --
+    - "Observability"
+    - "AIOps"
+    - "MLOps"
+    - "Monitoring"
+    - "Telemetry"
+    # -- Leadership --
+    - "Head of Engineering"
+    - "Head of SRE"
+    - "Head of Platform"
+    - "Head of Infrastructure"
+    - "Head of Cloud"
+    - "VP Engineering"
+    - "VP of Infrastructure"
+    - "VP of Platform"
+    - "Director of Engineering"
+    - "Director of SRE"
+    - "Director of Platform"
+    - "Director of Infrastructure"
+    - "Engineering Manager"
+    - "Director of Cloud"
+    # -- Solutions / Pre-sales / Advisory --
+    - "Solutions Architect"
+    - "Solutions Engineer"
+    - "Cloud Solutions"
+    - "Technical Account Manager"
+    - "Field CTO"
+    - "Technical Advisor"
+    # -- GenAI / AI Engineering (emerging focus) --
+    - "GenAI"
+    - "Generative AI"
+    - "AI Platform"
+    - "AI Infrastructure"
+    - "LLMOps"
+
+  negative:
+    - "Junior"
+    - "Intern"
+    - "Graduate"
+    - "Entry Level"
+    - "Associate"
+    - "iOS"
+    - "Android"
+    - "Frontend"
+    - "React"
+    - "PHP"
+    - "Ruby"
+    - "Embedded"
+    - "Firmware"
+    - "FPGA"
+    - "COBOL"
+    - "Mainframe"
+    - "Blockchain"
+    - "Web3"
+    - "Crypto"
+    - "Game"
+    - "QA Analyst"            # pure QA; Pavan is above this level
+    - "Manual Tester"
+
+  seniority_boost:
+    - "Senior"
+    - "Staff"
+    - "Principal"
+    - "Lead"
+    - "Head"
+    - "Director"
+    - "VP"
+    - "Global"
+
+# -- Search queries --
+# Tuned to SRE / Platform / Cloud leadership roles; India-remote-friendly portals.
+
+search_queries:
+
+  # -- Core SRE & Reliability --
+  - name: Greenhouse — Head / VP SRE
+    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io "Head of SRE" OR "VP of SRE" OR "Director of SRE" OR "VP Site Reliability" remote OR India'
+    enabled: true
+
+  - name: Greenhouse — Platform Engineering Leadership
+    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io "Head of Platform Engineering" OR "VP Platform" OR "Director Platform Engineering" remote'
+    enabled: true
+
+  - name: Ashby — SRE & Platform Leadership
+    query: 'site:jobs.ashbyhq.com "Site Reliability" OR "SRE" OR "Platform Engineering" "Head" OR "Director" OR "VP" OR "Principal" remote'
+    enabled: true
+
+  - name: Lever — SRE & Reliability Leadership
+    query: 'site:jobs.lever.co "Site Reliability Engineer" OR "Head of SRE" OR "Platform Engineering" "Senior" OR "Staff" OR "Principal" OR "Director" remote'
+    enabled: true
+
+  # -- Cloud Architecture & Infrastructure --
+  - name: Greenhouse — Cloud Architect / Infrastructure Head
+    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io "Cloud Architect" OR "Head of Infrastructure" OR "Director of Cloud" OR "VP Infrastructure" remote'
+    enabled: true
+
+  - name: Ashby — Cloud & DevOps Leadership
+    query: 'site:jobs.ashbyhq.com "Cloud Platform" OR "DevOps" OR "Infrastructure" "Head" OR "Director" OR "Principal" OR "Staff" remote'
+    enabled: true
+
+  - name: Lever — Cloud & Platform Engineering
+    query: 'site:jobs.lever.co "Cloud Platform" OR "Infrastructure Architect" OR "DevOps Lead" OR "Head of DevOps" remote'
+    enabled: true
+
+  # -- Observability & AIOps --
+  - name: Greenhouse — Observability / AIOps Roles
+    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io "Observability" OR "AIOps" OR "MLOps" "Senior" OR "Staff" OR "Principal" OR "Director" remote'
+    enabled: true
+
+  - name: Ashby — Observability & Reliability Engineering
+    query: 'site:jobs.ashbyhq.com "Observability" OR "AIOps" OR "Reliability Engineering" "Senior" OR "Lead" OR "Director" remote'
+    enabled: true
+
+  # -- FinTech & Banking SRE (sector-specific) --
+  - name: FinTech — SRE & Platform Engineering
+    query: '"SRE" OR "Site Reliability" OR "Platform Engineering" "FinTech" OR "Banking" OR "Financial Services" "Director" OR "Head" OR "VP" remote OR India'
+    enabled: true
+
+  - name: Capital Markets — SRE / Cloud Leadership
+    query: '"SRE" OR "Cloud Engineer" OR "DevOps" "Capital Markets" OR "Investment Bank" OR "Trading" "Head" OR "Director" OR "Principal" remote'
+    enabled: true
+
+  # -- India-based & APAC remote tech boards --
+  - name: LinkedIn — SRE Director / VP India
+    query: 'site:linkedin.com/jobs "Head of SRE" OR "Director SRE" OR "VP Platform Engineering" India OR remote'
+    enabled: true
+
+  - name: Naukri — SRE / Platform Leadership India
+    query: 'site:naukri.com "Head of SRE" OR "Director Platform Engineering" OR "VP Cloud" OR "Principal SRE" Hyderabad OR Bangalore OR remote'
+    enabled: true
+
+  - name: Instahyre — Senior Engineering Leadership India
+    query: 'site:instahyre.com "SRE" OR "Platform Engineering" OR "Cloud" "Head" OR "Director" OR "VP"'
+    enabled: true
+
+  - name: Wellfound — SRE & Platform (Startups)
+    query: 'site:wellfound.com "Site Reliability" OR "Platform Engineering" OR "SRE" "Head" OR "Lead" OR "Director" remote'
+    enabled: true
+
+  # -- Solutions Architect / Field CTO / Advisory (pre-sales fit) --
+  - name: Greenhouse — Solutions Architect Cloud / SRE
+    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io "Solutions Architect" "Cloud" OR "DevOps" OR "SRE" OR "Platform" remote'
+    enabled: true
+
+  - name: Ashby — Field CTO / Technical Advisor
+    query: 'site:jobs.ashbyhq.com "Field CTO" OR "Technical Advisor" OR "Principal Solutions Architect" cloud OR SRE OR DevOps'
+    enabled: true
+
+  # -- GenAI Platform & AI Infrastructure --
+  - name: Greenhouse — AI Platform / AI Infrastructure
+    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io "AI Platform" OR "AI Infrastructure" OR "LLMOps" "Senior" OR "Staff" OR "Principal" OR "Director" remote'
+    enabled: true
+
+  - name: Ashby — GenAI Engineering Leadership
+    query: 'site:jobs.ashbyhq.com "GenAI" OR "AI Infrastructure" OR "AI Platform" "Staff" OR "Principal" OR "Lead" OR "Director" remote'
+    enabled: true
+
+  # -- Remote-friendly global boards --
+  - name: Himalayas — SRE & Platform Remote
+    query: 'site:himalayas.app "Site Reliability" OR "Platform Engineering" OR "SRE" OR "Cloud Architect" "Senior" OR "Staff" OR "Director" remote'
+    enabled: true
+
+  - name: WeWorkRemotely — SRE & DevOps Leadership
+    query: 'site:weworkremotely.com "SRE" OR "Site Reliability" OR "Platform Engineering" OR "Cloud Architect" OR "DevOps"'
+    enabled: true
+
+  - name: RemoteOK — SRE & Infrastructure
+    query: 'site:remoteok.com "SRE" OR "Site Reliability" OR "Platform Engineering" OR "DevOps Lead" OR "Cloud Architect"'
+    enabled: true
+
+  - name: Working Nomads — SRE / Cloud / DevOps
+    query: 'site:workingnomads.com "SRE" OR "Site Reliability" OR "Cloud Architect" OR "Platform Engineering" OR "DevOps"'
+    enabled: true
+
+# -- Tracked companies --
+# Companies whose career pages are checked directly.
+# Curated for SRE, Platform Engineering, Cloud, Observability, FinTech, and APAC/India hiring.
+
+tracked_companies:
+
+  # -- Cloud Hyperscalers (strong SRE/Platform orgs) --
+
+  - name: Google (India/APAC)
+    careers_url: https://careers.google.com
+    scan_method: websearch
+    scan_query: 'site:careers.google.com "Site Reliability Engineer" OR "SRE" OR "Platform Engineer" India OR Hyderabad OR remote'
+    notes: "Large SRE org — coined the term. Strong Hyderabad presence."
+    enabled: true
+
+  - name: Microsoft (India)
+    careers_url: https://jobs.careers.microsoft.com
+    scan_method: websearch
+    scan_query: 'site:jobs.careers.microsoft.com "SRE" OR "Platform Engineering" OR "Cloud Engineer" India OR Hyderabad'
+    notes: "Azure SRE and Platform Engineering. Large India engineering center."
+    enabled: true
+
+  - name: Amazon / AWS (India)
+    careers_url: https://www.amazon.jobs
+    scan_method: websearch
+    scan_query: 'site:amazon.jobs "Site Reliability" OR "Platform Engineering" OR "DevOps" India OR Hyderabad OR remote'
+    notes: "AWS infra and SRE. Major India presence."
+    enabled: true
+
+  # -- Observability & SRE tooling companies --
+
+  - name: Dynatrace
+    careers_url: https://jobs.lever.co/dynatrace
+    notes: "Observability leader Pavan has deployed at scale (ADP). Strong SA / Solutions Engineering roles."
+    enabled: true
+
+  - name: Datadog
+    careers_url: https://job-boards.greenhouse.io/datadog
+    api: https://boards-api.greenhouse.io/v1/boards/datadog/jobs
+    notes: "Monitoring & observability. Strong SRE and Solutions Architect hiring globally."
+    enabled: true
+
+  - name: Grafana Labs
+    careers_url: https://job-boards.greenhouse.io/grafana
+    api: https://boards-api.greenhouse.io/v1/boards/grafana/jobs
+    notes: "Open-source observability (Grafana/Prometheus). Remote-first. Pavan has hands-on experience."
+    enabled: true
+
+  - name: New Relic
+    careers_url: https://jobs.lever.co/newrelic
+    notes: "Full-stack observability. Remote APAC and India-friendly."
+    enabled: true
+
+  - name: PagerDuty
+    careers_url: https://jobs.lever.co/pagerduty
+    notes: "Incident management platform. Direct overlap with Pavan's incident recovery expertise."
+    enabled: true
+
+  - name: Splunk (Cisco)
+    careers_url: https://job-boards.greenhouse.io/splunk
+    api: https://boards-api.greenhouse.io/v1/boards/splunk/jobs
+    notes: "Log intelligence & SIEM. Pavan has hands-on deployment experience."
+    enabled: true
+
+  - name: Honeycomb
+    careers_url: https://job-boards.greenhouse.io/honeycombio
+    api: https://boards-api.greenhouse.io/v1/boards/honeycombio/jobs
+    notes: "Observability-native platform. Strong SRE culture and practice-building roles."
+    enabled: true
+
+  # -- Incident Management & Reliability --
+
+  - name: FireHydrant
+    careers_url: https://job-boards.greenhouse.io/firehydrant
+    api: https://boards-api.greenhouse.io/v1/boards/firehydrant/jobs
+    notes: "Incident management and reliability platform. Directly aligned to Pavan's incident recovery expertise."
+    enabled: true
+
+  - name: Blameless
+    careers_url: https://www.blameless.com/careers
+    scan_method: websearch
+    scan_query: '"blameless.com" careers "SRE" OR "Reliability" OR "Solutions"'
+    notes: "SRE and reliability platform. Deep domain fit."
+    enabled: true
+
+  - name: Rootly
+    careers_url: https://jobs.ashbyhq.com/rootly
+    scan_method: websearch
+    scan_query: 'site:jobs.ashbyhq.com/rootly'
+    notes: "Incident management SaaS. SRE-focused hiring."
+    enabled: true
+
+  - name: incident.io
+    careers_url: https://incident.io/careers
+    scan_method: websearch
+    scan_query: '"incident.io" careers "SRE" OR "Solutions" OR "Engineering"'
+    notes: "London-based incident management platform. Strong SRE culture."
+    enabled: true
+
+  # -- Chaos Engineering & Resilience --
+
+  - name: Gremlin
+    careers_url: https://job-boards.greenhouse.io/gremlin
+    api: https://boards-api.greenhouse.io/v1/boards/gremlin/jobs
+    notes: "Chaos engineering platform. Perfect domain match with Pavan's Keptn chaos engineering work."
+    enabled: true
+
+  # -- CI/CD, DevOps & Deployment --
+
+  - name: HashiCorp (IBM)
+    careers_url: https://job-boards.greenhouse.io/hashicorp
+    api: https://boards-api.greenhouse.io/v1/boards/hashicorp/jobs
+    notes: "Terraform, Vault, Consul. Pavan has deep Terraform/IaC expertise."
+    enabled: true
+
+  - name: GitLab
+    careers_url: https://job-boards.greenhouse.io/gitlab
+    api: https://boards-api.greenhouse.io/v1/boards/gitlab/jobs
+    notes: "Remote-first. Full DevOps lifecycle. Strong APAC hiring."
+    enabled: true
+
+  - name: CircleCI
+    careers_url: https://job-boards.greenhouse.io/circleci
+    api: https://boards-api.greenhouse.io/v1/boards/circleci/jobs
+    notes: "CI/CD platform. Platform Engineering and SRE roles."
+    enabled: true
+
+  - name: Harness
+    careers_url: https://job-boards.greenhouse.io/harness
+    api: https://boards-api.greenhouse.io/v1/boards/harness/jobs
+    notes: "San Francisco / Bangalore. DevOps and CI/CD platform. Large India office."
+    enabled: true
+
+  - name: Pulumi
+    careers_url: https://job-boards.greenhouse.io/pulumi
+    api: https://boards-api.greenhouse.io/v1/boards/pulumi/jobs
+    notes: "IaC platform (alternative to Terraform). Strong SA / Solutions Engineering roles."
+    enabled: true
+
+  # -- Kubernetes & Cloud Native --
+
+  - name: SUSE
+    careers_url: https://job-boards.greenhouse.io/suse
+    api: https://boards-api.greenhouse.io/v1/boards/suse/jobs
+    notes: "Rancher / Kubernetes enterprise. Remote EMEA + APAC. Pavan is CKAD certified."
+    enabled: true
+
+  - name: Weaveworks
+    careers_url: https://www.weaveworks.com/company/careers
+    scan_method: websearch
+    scan_query: '"weaveworks" careers "SRE" OR "Platform" OR "Kubernetes" OR "Solutions"'
+    notes: "GitOps and Kubernetes tooling. Remote-friendly."
+    enabled: true
+
+  - name: Portworx (Pure Storage)
+    careers_url: https://job-boards.greenhouse.io/purestorage
+    api: https://boards-api.greenhouse.io/v1/boards/purestorage/jobs
+    notes: "Cloud-native storage and data management. Kubernetes-native. India office."
+    enabled: true
+
+  # -- FinTech, Banking & Capital Markets platforms --
+
+  - name: Thought Machine
+    careers_url: https://job-boards.greenhouse.io/thoughtmachine
+    api: https://boards-api.greenhouse.io/v1/boards/thoughtmachine/jobs
+    notes: "London / Singapore / Sydney. Cloud-native core banking. SRE and Platform roles. FinTech fit."
+    enabled: true
+
+  - name: Mambu
+    careers_url: https://job-boards.greenhouse.io/mambu
+    api: https://boards-api.greenhouse.io/v1/boards/mambu/jobs
+    notes: "Berlin / Amsterdam / remote. Cloud banking SaaS. SRE and DevOps leadership."
+    enabled: true
+
+  - name: Temenos
+    careers_url: https://careers.temenos.com
+    scan_method: websearch
+    scan_query: 'site:temenos.com/careers "SRE" OR "Platform Engineering" OR "Cloud" OR "DevOps"'
+    notes: "Geneva. Core banking software. India office. Banking domain expertise fit."
+    enabled: true
+
+  - name: FIS Global
+    careers_url: https://jobs.fisglobal.com
+    scan_method: websearch
+    scan_query: 'site:jobs.fisglobal.com "SRE" OR "Platform Engineering" OR "Cloud Architect" OR "DevOps" India OR remote'
+    notes: "FinTech giant. Large Hyderabad presence. SRE and infrastructure leadership roles."
+    enabled: true
+
+  - name: Finastra
+    careers_url: https://career2.successfactors.eu/careers
+    scan_method: websearch
+    scan_query: '"Finastra" "SRE" OR "Platform Engineering" OR "Cloud" OR "DevOps" India OR remote'
+    notes: "London / Hyderabad. Open finance platform. Strong India engineering center."
+    enabled: true
+
+  - name: Stripe
+    careers_url: https://stripe.com/jobs
+    scan_method: websearch
+    scan_query: 'site:stripe.com/jobs "SRE" OR "Site Reliability" OR "Infrastructure" OR "Platform Engineering" remote OR India OR Singapore'
+    notes: "Payments infrastructure. World-class SRE org. Remote-friendly."
+    enabled: true
+
+  - name: Wise
+    careers_url: https://job-boards.greenhouse.io/wise
+    api: https://boards-api.greenhouse.io/v1/boards/wise/jobs
+    notes: "London / Tallinn / Singapore. Global money transfer. Strong SRE and Platform Engineering."
+    enabled: true
+
+  - name: Revolut
+    careers_url: https://www.revolut.com/careers
+    scan_method: websearch
+    scan_query: 'site:revolut.com/careers "SRE" OR "Platform Engineering" OR "Infrastructure" OR "Cloud" remote OR India'
+    notes: "London / global. Neobank. SRE and infrastructure scale challenges."
+    enabled: true
+
+  - name: Razorpay
+    careers_url: https://razorpay.com/jobs
+    scan_method: websearch
+    scan_query: 'site:razorpay.com/jobs "SRE" OR "Platform Engineering" OR "Cloud" OR "Infrastructure" OR "DevOps"'
+    notes: "Bangalore / Hyderabad. Indian FinTech unicorn. Large SRE and infra org."
+    enabled: true
+
+  - name: PhonePe
+    careers_url: https://phonepe.com/en/careers.html
+    scan_method: websearch
+    scan_query: '"PhonePe" careers "SRE" OR "Platform Engineering" OR "Infrastructure" OR "Cloud"'
+    notes: "Bangalore. Indian payments giant (Walmart). SRE at massive scale."
+    enabled: true
+
+  - name: Zerodha
+    careers_url: https://zerodha.com/careers
+    scan_method: websearch
+    scan_query: 'site:zerodha.com/careers "SRE" OR "Infrastructure" OR "Platform" OR "Cloud"'
+    notes: "Bangalore. India's largest stock broker. Reliability-first engineering culture."
+    enabled: true
+
+  # -- Large India engineering centers (MNCs with Hyderabad presence) --
+
+  - name: ADP (direct)
+    careers_url: https://jobs.adp.com
+    scan_method: websearch
+    scan_query: 'site:jobs.adp.com "SRE" OR "Site Reliability" OR "Platform Engineering" OR "Head of" India OR Hyderabad'
+    notes: "Pavan's current client. ADP has a major Hyderabad engineering center."
+    enabled: true
+
+  - name: Fidelity Investments (India)
+    careers_url: https://jobs.fidelity.com
+    scan_method: websearch
+    scan_query: 'site:jobs.fidelity.com "SRE" OR "Platform Engineering" OR "Cloud" OR "DevOps" India OR Hyderabad'
+    notes: "Large India engineering presence. Capital Markets and FinTech domain fit."
+    enabled: true
+
+  - name: JPMorgan Chase (India)
+    careers_url: https://careers.jpmorgan.com
+    scan_method: websearch
+    scan_query: 'site:careers.jpmorgan.com "SRE" OR "Site Reliability" OR "Platform Engineering" OR "Cloud" India OR Hyderabad'
+    notes: "Hyderabad tech center. Banking domain + SRE expertise direct fit."
+    enabled: true
+
+  - name: Goldman Sachs (India)
+    careers_url: https://www.goldmansachs.com/careers
+    scan_method: websearch
+    scan_query: 'site:goldmansachs.com/careers "SRE" OR "Platform Engineering" OR "Cloud" OR "Infrastructure" India OR Bangalore'
+    notes: "Bangalore engineering. Capital Markets expertise direct fit."
+    enabled: true
+
+  - name: Deutsche Bank (India)
+    careers_url: https://careers.db.com
+    scan_method: websearch
+    scan_query: '"Deutsche Bank" careers "SRE" OR "Platform Engineering" OR "Cloud" India OR Pune OR Bangalore'
+    notes: "APAC + India tech. Banking + SRE domain fit."
+    enabled: true
+
+  - name: Standard Chartered (India)
+    careers_url: https://scb.taleo.net
+    scan_method: websearch
+    scan_query: '"Standard Chartered" careers "SRE" OR "Platform Engineering" OR "Cloud" OR "DevOps" India'
+    notes: "Large India tech center. Banking SRE and cloud transformation roles."
+    enabled: true
+
+  # -- Indian Tech MNCs & Product companies --
+
+  - name: Flipkart
+    careers_url: https://www.flipkartcareers.com
+    scan_method: websearch
+    scan_query: '"Flipkart" careers "SRE" OR "Platform Engineering" OR "Infrastructure" OR "Cloud"'
+    notes: "Bangalore. India's largest e-commerce. SRE at extreme scale."
+    enabled: true
+
+  - name: Swiggy
+    careers_url: https://careers.swiggy.com
+    scan_method: websearch
+    scan_query: '"Swiggy" careers "SRE" OR "Platform Engineering" OR "Cloud" OR "Infrastructure"'
+    notes: "Bangalore. Food delivery unicorn. Reliability-at-scale challenges."
+    enabled: true
+
+  - name: Meesho
+    careers_url: https://jobs.lever.co/meesho
+    notes: "Bangalore. Social commerce unicorn. Growing SRE and platform org."
+    enabled: true
+
+  - name: Freshworks
+    careers_url: https://job-boards.greenhouse.io/freshworks
+    api: https://boards-api.greenhouse.io/v1/boards/freshworks/jobs
+    notes: "Chennai / Hyderabad / San Mateo. SaaS CRM. Platform and SRE leadership roles."
+    enabled: true
+
+  - name: Zoho
+    careers_url: https://careers.zohocorp.com
+    scan_method: websearch
+    scan_query: '"Zoho" careers "SRE" OR "Platform Engineering" OR "Cloud" OR "Infrastructure"'
+    notes: "Chennai / Hyderabad. Enterprise SaaS at scale. SRE and platform roles."
+    enabled: true
+
+  # -- ITSM & ServiceNow ecosystem (ITIL / Incident Management overlap) --
+
+  - name: ServiceNow
+    careers_url: https://jobs.lever.co/servicenow
+    notes: "Hyderabad / global. ITSM platform. Pavan's ITIL expertise is a direct fit for Solutions/Advisory roles."
+    enabled: true
+
+  - name: Atlassian
+    careers_url: https://job-boards.greenhouse.io/atlassian
+    api: https://boards-api.greenhouse.io/v1/boards/atlassian/jobs
+    notes: "Remote-first. Jira/Confluence/Opsgenie. SRE and Platform Engineering leadership."
+    enabled: true
+
+  - name: BMC Software
+    careers_url: https://careers.bmc.com
+    scan_method: websearch
+    scan_query: 'site:careers.bmc.com "SRE" OR "Platform Engineering" OR "Cloud" OR "Solutions Architect" India OR remote'
+    notes: "Houston / Hyderabad. IT operations and AIOps platform. Strong India presence."
+    enabled: true
+
+  # -- Consulting / Advisory (leveraging IRIS/ADP/Schwab experience) --
+
+  - name: Thoughtworks
+    careers_url: https://job-boards.greenhouse.io/thoughtworks
+    api: https://boards-api.greenhouse.io/v1/boards/thoughtworks/jobs
+    notes: "Hyderabad / global. Technology consultancy. SRE, Platform and Cloud advisory roles."
+    enabled: true
+
+  - name: EPAM Systems
+    careers_url: https://job-boards.greenhouse.io/epamsystems
+    api: https://boards-api.greenhouse.io/v1/boards/epamsystems/jobs
+    notes: "Global engineering services. SRE and Cloud Architecture advisory. India hiring."
+    enabled: true
+
+  - name: Coforge
+    careers_url: https://www.coforge.com/careers
+    scan_method: websearch
+    scan_query: '"Coforge" careers "SRE" OR "Platform Engineering" OR "Cloud" OR "DevOps" "Head" OR "Director" OR "Lead"'
+    notes: "Noida / Hyderabad. IT services with FinTech focus. Platform Engineering leadership."
+    enabled: true
+
+  # -- AI Platform & GenAI (Pavan's emerging focus) --
+
+  - name: Anthropic
+    careers_url: https://job-boards.greenhouse.io/anthropic
+    api: https://boards-api.greenhouse.io/v1/boards/anthropic/jobs
+    notes: "AI safety lab. AI Platform / SRE / Infrastructure roles. Remote-friendly."
+    enabled: true
+
+  - name: Arize AI
+    careers_url: https://job-boards.greenhouse.io/arizeai
+    api: https://boards-api.greenhouse.io/v1/boards/arizeai/jobs
+    notes: "LLMOps / AI observability — direct overlap with Pavan's observability expertise."
+    enabled: true
+
+  - name: Weights & Biases
+    careers_url: https://jobs.lever.co/wandb
+    notes: "MLOps platform. Remote-friendly. Platform and Solutions Engineering roles."
+    enabled: true
+
+  - name: Harness (AI DevOps)
+    careers_url: https://job-boards.greenhouse.io/harness
+    api: https://boards-api.greenhouse.io/v1/boards/harness/jobs
+    notes: "Bangalore / SF. AI-native DevOps. Large India engineering team."
+    enabled: true

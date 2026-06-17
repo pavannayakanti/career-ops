@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PAVAN KUMAR NAYAKANTI — CV</title>
+<style>
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('../templates/fonts/space-grotesk-latin.woff2') format('woff2');
+    font-weight: 300 700; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('../templates/fonts/space-grotesk-latin-ext.woff2') format('woff2');
+    font-weight: 300 700; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('../templates/fonts/dm-sans-latin.woff2') format('woff2');
+    font-weight: 100 1000; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('../templates/fonts/dm-sans-latin-ext.woff2') format('woff2');
+    font-weight: 100 1000; font-style: normal; font-display: swap;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { font-family: 'DM Sans', sans-serif; font-size: 11px; line-height: 1.5; color: #1a1a2e; background: #ffffff; }
+  .page { width: 100%; max-width: 210mm; margin: 0 auto; padding: 2px 0; }
+
+  .header { margin-bottom: 20px; }
+  .header h1 { font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #1a1a2e; letter-spacing: -0.02em; margin-bottom: 6px; line-height: 1.1; }
+  .header-gradient { height: 2px; background: linear-gradient(to right, hsl(187, 74%, 32%), hsl(270, 70%, 45%)); border-radius: 1px; margin-bottom: 10px; }
+  .contact-row { display: flex; flex-wrap: wrap; gap: 8px 14px; font-size: 10.5px; line-height: 1.4; color: #555; }
+  .contact-row a { color: #555; text-decoration: none; }
+  .contact-row .separator { color: #ccc; }
+
+  .section { margin-bottom: 18px; }
+  .section-title { font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: hsl(187, 74%, 32%); border-bottom: 1.5px solid #e2e2e2; padding-bottom: 4px; margin-bottom: 10px; line-height: 1.2; }
+  .summary-text { font-size: 11px; line-height: 1.7; color: #2f2f2f; }
+  a { white-space: nowrap; }
+
+  .competencies-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+  .competency-tag { font-size: 10px; font-weight: 500; color: hsl(187, 74%, 28%); background: hsl(187, 40%, 95%); padding: 4px 10px; border-radius: 3px; border: 1px solid hsl(187, 40%, 88%); }
+
+  .job { margin-bottom: 14px; }
+  .job-header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 4px; }
+  .job-company { font-family: 'Space Grotesk', sans-serif; font-size: 12.5px; font-weight: 600; color: hsl(270, 70%, 45%); }
+  .job-period { font-size: 10.5px; color: #777; white-space: nowrap; }
+  .job-role { font-size: 11px; font-weight: 600; color: #333; margin-bottom: 6px; }
+  .job ul { padding-left: 18px; margin-top: 6px; }
+  .job li { font-size: 10.5px; line-height: 1.6; color: #333; margin-bottom: 4px; }
+  .job li strong { font-weight: 600; }
+
+  .project { margin-bottom: 12px; }
+  .project-title { font-family: 'Space Grotesk', sans-serif; font-size: 11.5px; font-weight: 600; color: hsl(270, 70%, 45%); }
+  .project-badge { font-size: 9px; font-weight: 500; color: hsl(187, 74%, 32%); background: hsl(187, 40%, 95%); padding: 1px 6px; border-radius: 2px; margin-left: 6px; }
+  .project-desc { font-size: 10.5px; color: #444; margin-top: 3px; line-height: 1.55; }
+
+  .edu-item { margin-bottom: 8px; }
+  .edu-header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .edu-title { font-weight: 600; font-size: 11px; color: #333; }
+  .edu-org { color: hsl(270, 70%, 45%); font-weight: 500; }
+  .edu-year { font-size: 10px; color: #777; white-space: nowrap; }
+
+  .cert-item { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 6px; }
+  .cert-title { font-size: 10.5px; font-weight: 500; color: #333; }
+  .cert-org { color: hsl(270, 70%, 45%); }
+  .cert-year { font-size: 10px; color: #777; white-space: nowrap; }
+
+  .skill-item { font-size: 10.5px; color: #444; margin-bottom: 5px; }
+  .skill-category { font-weight: 600; color: #333; }
+
+  @media print { body { -webkit-print-color-adjust: exact; print-color-adjust: exact; } .page { padding: 0; } }
+  .avoid-break, .job, .project, .edu-item, .cert-item { break-inside: avoid; page-break-inside: avoid; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header avoid-break">
+    <h1>PAVAN KUMAR NAYAKANTI</h1>
+    <div class="header-gradient"></div>
+    <div class="contact-row">
+      <span>+91-9440493097</span>
+      <span class="separator">|</span>
+      <span>pavan.nayakanti@hotmail.com</span>
+      <span class="separator">|</span>
+      <a href="https://www.linkedin.com/in/pavan-nayakanti/">linkedin.com/in/pavan-nayakanti</a>
+      <span class="separator">|</span>
+      <a href="https://github.com/pavannayakanti">github.com/pavannayakanti</a>
+      <span class="separator">|</span>
+      <span>Hyderabad, India</span>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="section avoid-break">
+    <div class="section-title">Professional Summary</div>
+    <div class="summary-text">Director-level DevOps leader with 20+ years operating regulated FinTech platforms on Azure and Kubernetes. Deep expertise in AKS, Helm-based multi-environment deployments, Azure DevOps CI/CD pipelines, SOX/GDPR compliance-as-code, and full-stack observability (Prometheus, Dynatrace, MS Application Insights, Splunk). Scaled global SRE organisations from 4 to 40 engineers across ADP, Charles Schwab, BMO, and RBC -- with blameless postmortem culture, MTTR reduced 40%+, and on-call governance for 35-member teams. Strong track record of engineering compliance directly into delivery pipelines (audit trails, approval workflows, zero manual workarounds) for regulated financial services clients. Ready to own the DevOps platform charter as a Director and help establish Hyderabad as a world-class engineering hub.</div>
+  </div>
+
+  <!-- COMPETENCIES -->
+  <div class="section">
+    <div class="section-title">Core Competencies</div>
+    <div class="competencies-grid">
+      <span class="competency-tag">Azure Kubernetes Service (AKS) &amp; CKAD</span>
+      <span class="competency-tag">Azure DevOps &amp; GitHub Actions CI/CD</span>
+      <span class="competency-tag">Helm &amp; Multi-Environment GitOps Deployments</span>
+      <span class="competency-tag">Terraform IaC (Azure &amp; AWS)</span>
+      <span class="competency-tag">Ansible Configuration Management</span>
+      <span class="competency-tag">Compliance-as-Code (SOX, GDPR)</span>
+      <span class="competency-tag">DevSecOps -- SAST/DAST/IAST, SonarQube, JFrog</span>
+      <span class="competency-tag">SRE -- SLOs, On-Call, Blameless Postmortems</span>
+      <span class="competency-tag">Observability -- Prometheus, Dynatrace, AppInsights, Splunk</span>
+      <span class="competency-tag">AIOps &amp; Automated Remediation</span>
+      <span class="competency-tag">FinTech Regulated Environments</span>
+      <span class="competency-tag">GCC Build-Out &amp; Global Team Leadership</span>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Work Experience</div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">IRIS Software</span>
+        <span class="job-period">Sep 2020 -- Present</span>
+      </div>
+      <div class="job-role">Sr. Specialist -- Cloud Practice &amp; SRE Lead &nbsp;<span style="font-weight:400;color:#888;">| India &nbsp;(Clients: ADP, Charles Schwab, BMO)</span></div>
+      <ul>
+        <li><strong>SRE Leadership &amp; MTTR Reduction (ADP):</strong> Scaled ADP's SRE organisation from 4 to 40 engineers across India, Canada, and the US. Defined SLOs, SLIs, and error budgets; instituted blameless postmortem culture; managed on-call rotations and escalation frameworks for a 35-member SRE team. Reduced MTTR by 40%+ through AIOps-driven automated remediation via Dynatrace and Ansible.</li>
+        <li><strong>Full-Stack Observability (ADP):</strong> Deployed Prometheus and Grafana alongside Dynatrace and MS Application Insights for full-stack observability -- real-time alerting pipelines, root cause analysis, and proactive bottleneck identification across network, application, and infrastructure tiers. Established Chaos Engineering practices using Keptn.</li>
+        <li><strong>Helm-Based Deployment Orchestration Platform (modeas):</strong> Architected and delivered a deployment orchestration platform across multi-environment Kubernetes estates (dev, staging, production) using Kubernetes and Helm with environment-specific overlays, rollback capability, and deployment traceability -- 200+ builds/deployments per hour, eliminating 10,000+ manual operational hours annually.</li>
+        <li><strong>Cloud Migration &amp; FinOps (BMO):</strong> Led end-to-end on-premise to AWS migration for BMO CCB -- CDK-enabled pipelines across ECS Fargate and Lambda, HA/DR built in from day one. Drove FinOps: rightsized workloads, eliminated unused resources, reduced cloud waste across the AWS estate.</li>
+        <li><strong>Platform Engineering Build-Out (Charles Schwab):</strong> Built Charles Schwab's 18-member Platform Engineering team from the ground up as IRIS India-side delivery lead -- SRE practices, reliability reviews, incident governance, and on-call runbooks. Delivered 99.9% release reliability; aligned cross-platform artifact deployment across the TD Ameritrade merger.</li>
+        <li><strong>GenAI &amp; AI-Assisted Operations (BMO):</strong> Designed and deployed GenAI risk summarisation assistants on AWS Bedrock using event-driven pipelines, reducing manual analysis effort and accelerating regulatory insights delivery.</li>
+        <li>Conducted quarterly enterprise-wide training sessions for up to 200 participants per 20-hour session; recognised as IRIS Certified Trainer for Q2 &amp; Q3 2024.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">IRIS Software</span>
+        <span class="job-period">Jun 2018 -- Sep 2020</span>
+      </div>
+      <div class="job-role">Automation Technology Specialist &nbsp;<span style="font-weight:400;color:#888;">| Toronto, Canada &nbsp;(Client: Royal Bank of Canada Insurance)</span></div>
+      <ul>
+        <li><strong>Compliance-as-Code CI/CD (SOX/GDPR -- 250+ Apps):</strong> Engineered audit trails, approval workflows, and change evidence directly into CI/CD pipelines at RBC -- SonarQube, JFrog Artifactory, Jenkins, UrbanCode, and GitHub enforcing SAST/DAST/IAST scanning and SOX/GDPR change control gates across 250+ applications. Zero manual compliance workarounds.</li>
+        <li><strong>DORA Framework Adoption:</strong> Inducted DORA across RBC Wealth Management and Insurance via Azure DevOps -- Deployment Frequency, Lead Time for Changes, Change Failure Rate, and MTTR established as engineering health metrics and reviewed quarterly with VP stakeholders. Measurable improvement in delivery performance and production stability.</li>
+        <li><strong>Self-Service Deployment Framework (Robo Deployment Framework):</strong> Designed self-service CI/CD orchestration for Windows services, database deployments (SSIS, Oracle, SQL Server), and enterprise workloads. Automated artifact retrieval and approval workflows via Python and Ansible. Application onboarding: 5 weeks to 5 hours (98% reduction) across 60+ teams.</li>
+        <li>Established SRE principles within RBC's DevSecOps programme -- observability standards, incident classification frameworks, and reliability-focused deployment gates across 250+ applications. Implemented Splunk log aggregation and alerting pipelines integrated with CI/CD for proactive incident detection.</li>
+        <li>Led enterprise migration of 250+ applications across 60+ teams from CA SCM/Harvest to GitHub. Contributed to ~$200K in new project acquisitions through pre-sales leadership at RBC subsidiaries.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">IRIS Software</span>
+        <span class="job-period">Feb 2017 -- Jun 2018</span>
+      </div>
+      <div class="job-role">Automation Architect &nbsp;<span style="font-weight:400;color:#888;">| Toronto, Canada &nbsp;(Clients: Insurance &amp; Capital Markets)</span></div>
+      <ul>
+        <li>Designed fault-tolerant, container-orchestrated deployment pipelines using Kubernetes and Helm -- zero-downtime rollouts across capital markets platforms with RBAC and resource governance.</li>
+        <li>Led RPA practice delivery automating 80+ applications across heterogeneous stacks (Java, NodeJS, Kafka, Salesforce, Mainframe). Contributed to $478K SOW closure and $180K Capital Markets engagement.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">TechMahindra Pvt. Ltd.</span>
+        <span class="job-period">Jul 2015 -- Feb 2017</span>
+      </div>
+      <div class="job-role">Technology Manager &nbsp;<span style="font-weight:400;color:#888;">| Noida, India &nbsp;(Client: Adobe)</span></div>
+      <ul>
+        <li>Led end-to-end data migration (Informatica to SQL Server 2012), SAP HANA upgrades, and zero-downtime data centre relocation for Adobe -- full plan, execution, and cutover with no production impact.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Microsoft Corporation</span>
+        <span class="job-period">Jul 2007 -- Dec 2014</span>
+      </div>
+      <div class="job-role">Sr. SDET -- QA, Automation &amp; Production Engineering &nbsp;<span style="font-weight:400;color:#888;">| India</span></div>
+      <ul>
+        <li>Full production ownership of Sales &amp; Marketing platforms serving US, EMEA, and APAC -- 99.99% uptime sustained over 7 years. Built QA automation frameworks integrated with CI/CD; managed incident response, RCA, and infrastructure administration (Windows/Linux). Supported 200% user growth through cloud migration and self-healing architectures.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- KEY INITIATIVES -->
+  <div class="section avoid-break">
+    <div class="section-title">Key Platform Initiatives</div>
+
+    <div class="project">
+      <span class="project-title">Compliance-as-Code CI/CD -- RBC (250+ Apps, SOX/GDPR)</span>
+      <span class="project-badge">DevSecOps -- SAST/DAST -- Audit Trails -- Azure DevOps</span>
+      <div class="project-desc">Engineered SOX/GDPR compliance directly into CI/CD pipelines across 250+ RBC applications -- SonarQube, JFrog, Jenkins, UrbanCode, GitHub enforcing SAST/DAST/IAST and change control gates. Zero manual compliance workarounds. Application onboarding reduced from 5 weeks to 5 hours (98% reduction) across 60+ teams.</div>
+    </div>
+
+    <div class="project">
+      <span class="project-title">ADP SRE -- 4 to 40 Engineers, MTTR -40%, AIOps Remediation</span>
+      <span class="project-badge">SRE -- Prometheus -- Dynatrace -- Ansible -- Keptn</span>
+      <div class="project-desc">Scaled ADP SRE from 4 to 40 engineers globally. Deployed Prometheus + Grafana + Dynatrace + MS Application Insights for full-stack observability with AlertManager-driven on-call pipelines. Automated remediation via Ansible. Chaos Engineering via Keptn. MTTR reduced 40%+ through blameless postmortem culture and AIOps.</div>
+    </div>
+
+    <div class="project">
+      <span class="project-title">modeas -- Helm-Based Multi-Environment Deployment Platform</span>
+      <span class="project-badge">Kubernetes -- Helm -- CI/CD -- GitOps patterns</span>
+      <div class="project-desc">Designed and delivered deployment orchestration across multi-environment Kubernetes estates (dev, staging, production) with Helm charts, environment-specific overlays, rollback capability, and full deployment traceability. 200+ builds/deployments per hour; eliminated 10,000+ manual operational hours annually; 600% deployment cadence improvement.</div>
+    </div>
+
+    <div class="project">
+      <span class="project-title">DORA Adoption -- RBC Wealth Management &amp; Insurance (60+ Teams)</span>
+      <span class="project-badge">DORA -- Azure DevOps -- Developer Experience</span>
+      <div class="project-desc">Established Deployment Frequency, Lead Time for Changes, Change Failure Rate, and MTTR as primary engineering health metrics across 60+ RBC teams via Azure DevOps. Quarterly VP-level reviews. Measurable improvement in delivery performance and production stability across the full estate.</div>
+    </div>
+
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section avoid-break">
+    <div class="section-title">Education</div>
+    <div class="edu-item">
+      <div class="edu-header">
+        <span class="edu-title">Masters in Artificial Intelligence &nbsp;<span class="edu-org">-- Woolf University</span></span>
+        <span class="edu-year">2024</span>
+      </div>
+    </div>
+    <div class="edu-item">
+      <div class="edu-header">
+        <span class="edu-title">General Management Program (GMP) &nbsp;<span class="edu-org">-- ISB Hyderabad</span></span>
+        <span class="edu-year">2022</span>
+      </div>
+    </div>
+    <div class="edu-item">
+      <div class="edu-header">
+        <span class="edu-title">M.Sc in Computer Science &nbsp;<span class="edu-org">-- Osmania University</span></span>
+        <span class="edu-year">2002</span>
+      </div>
+    </div>
+    <div class="edu-item">
+      <div class="edu-header">
+        <span class="edu-title">B.Sc in Electronics &nbsp;<span class="edu-org">-- Kakatiya University</span></span>
+        <span class="edu-year">2000</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="section avoid-break">
+    <div class="section-title">Certifications</div>
+    <div class="cert-item">
+      <span class="cert-title">Certified Kubernetes Application Developer <span class="cert-org">(CKAD)</span></span>
+      <span class="cert-year">2025</span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">Microsoft Certified: Azure Solutions Architect Expert <span class="cert-org">(AZ-305)</span></span>
+      <span class="cert-year">2026</span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">AWS Certified Solutions Architect -- Associate <span class="cert-org">(SAA-C01)</span></span>
+      <span class="cert-year">2026</span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">Google Cloud Certified -- Professional Cloud Architect <span class="cert-org">(PCA)</span></span>
+      <span class="cert-year">2026</span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">Certified SRE <span class="cert-org">(iSRE)</span></span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">Microsoft Certified: Azure AI Engineer Associate <span class="cert-org">(AI-102)</span></span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">ITIL® Certificate in IT Service Operations</span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">PMI Agile Certified Professional <span class="cert-org">(PMI-ACP)</span></span>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section avoid-break">
+    <div class="section-title">Technical Skills</div>
+    <div class="skill-item"><span class="skill-category">Cloud &amp; Container Platform:</span> Azure (AZ-305) -- AKS, Azure DevOps, Azure Key Vault, Log Analytics, Application Insights; AWS (CDK, ECS Fargate, Lambda, Bedrock); GCP (PCA); Kubernetes (CKAD), Docker, Helm, Terraform, Ansible</div>
+    <div class="skill-item"><span class="skill-category">CI/CD &amp; GitOps:</span> Azure DevOps Pipelines, GitHub Actions, Jenkins, UrbanCode; Helm-based multi-environment deployments with environment-specific overlays and rollback; IaC-driven provisioning (Terraform, AWS CDK)</div>
+    <div class="skill-item"><span class="skill-category">DevSecOps &amp; Compliance-as-Code:</span> SonarQube, JFrog Artifactory, SAST/DAST/IAST scanning; SOX/GDPR audit trail automation, approval workflow pipelines, change control gates; shift-left security integration; ITIL-aligned incident and change management</div>
+    <div class="skill-item"><span class="skill-category">Observability &amp; SRE:</span> Prometheus + AlertManager, Grafana, Dynatrace, MS Application Insights / Azure Log Analytics, Splunk, Telegraf; SLIs/SLOs, Error Budgets, Chaos Engineering (Keptn), DORA metrics, blameless postmortems</div>
+    <div class="skill-item"><span class="skill-category">Automation &amp; AI:</span> Python, Bash, PowerShell, Groovy; Ansible automated remediation; GenAI (AWS Bedrock, Azure AI), AIOps; MSc in Artificial Intelligence; AI-102, DP-100</div>
+    <div class="skill-item"><span class="skill-category">Data &amp; Messaging:</span> SQL Server, Oracle, SSIS; Kafka integration; event-driven pipelines (AWS Bedrock/BCRG); Tableau, Power BI</div>
+  </div>
+
+</div>
+</body>
+</html>
