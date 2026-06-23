@@ -1,14 +1,14 @@
-# Personal data (user fills these)
-cv.md
-data/applications.md
+# Personal data (user fills these) — tracked in fork for cross-machine sync
+# cv.md              ← tracked
 data/applications.db
-data/pipeline.md
-data/scan-history.tsv
+# data/applications.md  ← tracked
+# data/pipeline.md      ← tracked
+# data/scan-history.tsv ← tracked
 data/parser-output/**/*.json
 !data/parser-output/.gitkeep
 !data/parser-output/**/.gitkeep
 data/cache/ats-companies/
-reports/*.md
+# reports/*.md          ← tracked
 !reports/.gitkeep
 output/*
 !output/.gitkeep
@@ -21,18 +21,18 @@ batch/tracker-additions/**/*.tsv
 jds/*
 !jds/.gitkeep
 
-# Interview prep (accumulated STAR+R stories — user data)
-interview-prep/*
+# Interview prep (accumulated STAR+R stories — user data, tracked)
+# interview-prep/*   ← tracked
 !interview-prep/.gitkeep
 
-# Writing samples (user's personal files — never committed)
-writing-samples/*
+# Writing samples (user's personal files — tracked)
+# writing-samples/*  ← tracked
 !writing-samples/README.md
 
-# User config and customization (never auto-updated)
-config/profile.yml
-portals.yml
-modes/_profile.md
+# User config and customization — tracked in fork for cross-machine sync
+# config/profile.yml ← tracked
+# portals.yml        ← tracked
+# modes/_profile.md  ← tracked
 .update-dismissed
 .update-lock
 
