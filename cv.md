@@ -74,18 +74,19 @@ Led cloud practice across pre-sales, solution architecture, and delivery for maj
 
 **Team Building & Leadership:**
 - Scaled ADP's SRE organization from 4 to 40 engineers and architects across India, Canada, and the US.
-- Built Charles Schwab's 18-member Platform Engineering team from the ground up, establishing foundational SRE practices, reliability reviews, and incident governance.
+- Led the Platform Engineering team within Charles Schwab's Build, Tools & Infrastructure (BT&I) division (12-15 members spanning IRIS and partner organisations), establishing foundational SRE practices, reliability reviews, and incident governance.
 - Conducted quarterly enterprise-wide training sessions for up to 200 participants per 20-hour session, scaling SRE and DevOps capability across the organisation.
 - Presented reliability strategies, SRE metrics, resiliency architectures, and incident outcomes directly to VP and C-suite stakeholders at ADP, Charles Schwab, and BMO.
 
 **Platform Engineering & Automation:**
-- Delivered high-throughput deployment solution (modeas) handling 200+ builds/deployments per hour, eliminating 10,000+ manual operational hours annually and accelerating deployment cadence by 600%.
+- Led modeas (Modernization of ODEAS) within Charles Schwab's Build, Tools & Infrastructure (BT&I) division — rewrote the entire ODEAS deployment programme from Shell to Python, removing individual contributor dependencies (Shell complexity had concentrated change knowledge in a few people; Python made the codebase accessible and maintainable by the broader team) while delivering 200+ builds/hr and accelerating deployment cadence by 600%.
 - Architected enterprise-grade tooling including the Cloud Platform Maturity Index (CPMI) and DevOps as a Service, driving measurable cloud capability and automation maturity across clients.
 - Led CI/CD workflow optimisations, Terraform-driven IaC, and self-healing system implementations, improving release velocity and operational resilience to 99.9%.
 - Spearheaded migration of critical business applications for BMO's CCB, overseeing engineering efforts and architectural compliance.
 - Led end-to-end on-premise to AWS cloud migration for BMO, delivering CDK-enabled deployment pipelines for .NET applications across ECS Fargate containers and Lambda functions — with High Availability and Disaster Recovery built into the architecture from day one; managed VMware vSphere virtualised workloads as part of ADP's hybrid infrastructure platform prior to cloud migration.
 - Drove AWS FinOps practices for BMO — identifying obsolete, unused, and underutilised resources; rightsizing workloads to match actual demand; reducing cloud waste and improving cost efficiency across the AWS estate.
-- Led GCP landing zone preparation and workload migration POCs for Charles Schwab, evaluating GCP-native services for cloud-native deployments; executed cross-platform artifact deployment alignment across TD Ameritrade and Charles Schwab environments as part of the merger integration programme.
+- Drove DevSecOps adoption within Charles Schwab's Build, Tools & Infrastructure (BT&I) division — enabled security scans across build pipelines, remediated broken build and deployment workflows, introduced dozens of GitHub hooks to enforce code check-in standards and tighten commit governance, and automated key portions of new employee onboarding to reduce manual provisioning effort and accelerate time-to-productivity for incoming engineers.
+- Led GCP landing zone preparation and workload migration POCs within Charles Schwab's Build, Tools & Infrastructure (BT&I) division, evaluating GCP-native services for cloud-native deployments; executed cross-platform artifact deployment alignment across TD Ameritrade and Charles Schwab environments as part of the merger integration programme.
 
 **GenAI & Innovation:**
 - Designed and deployed GenAI-based assistants on AWS (Bedrock) for BMO, enabling risk summarisation and interactive Q&A via BCRG and LTS pipelines — reducing manual analysis effort and accelerating insights.
@@ -93,7 +94,7 @@ Led cloud practice across pre-sales, solution architecture, and delivery for maj
 
 **Key Achievements:**
 - Reduced MTTR by 40%+ through automated remediation and structured postmortem-driven continuous improvement.
-- Delivered 200+ builds/deployments per hour via the modeas platform, enabling frictionless high-frequency releases.
+- Delivered modeas (Modernization of ODEAS) within Charles Schwab's Build, Tools & Infrastructure (BT&I) division — Shell-to-Python rewrite removing individual contributor dependencies; 200+ builds/hr and 600% improvement in deployment cadence.
 - Implemented CPMI framework improving cloud security, efficiency, and capability maturity across three major banking clients.
 - Governed MSP and vendor delivery quality through operational scorecards, SLA tracking, and structured escalation/remediation frameworks.
 
