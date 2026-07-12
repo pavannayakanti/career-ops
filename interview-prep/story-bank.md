@@ -14,6 +14,36 @@ This file accumulates your best interview stories over time. Each evaluation (Bl
 ## Stories
 
 <!-- Stories will be added here as you evaluate offers -->
+
+---
+
+### [Cloud Migration] BMO AWS Serverless-First Migration
+**Source:** Report #090 — Teradata — Sr Principal Architect, Elastic Compute
+**S (Situation):** BMO ran 40+ critical applications on VMware vSphere on-prem and needed a cloud-native migration without business disruption.
+**T (Task):** Architect and deliver an end-to-end AWS migration with HA/DR built in, using CDK for repeatable infrastructure.
+**A (Action):** Designed serverless-first deployment model — Lambda + ECS Fargate + CDK. Built multi-AZ HA architecture. Authored DR runbooks and validated them in pre-production. Managed VMware virtualised workload decommission in lockstep.
+**R (Result):** Zero-downtime go-live; HA/DR validated before production cutover; CDK templates reused for future deployments.
+**Reflection:** Serverless-first must be a day-one architectural decision, not a retrofit. The IaC templates encode the pattern and prevent drift. DR runbooks that were never rehearsed are not runbooks — validate before you need them.
+
+---
+
+### [Platform Automation] modeas — Shell-to-Python Migration at Charles Schwab
+**Source:** Report #090 — Teradata — Sr Principal Architect, Elastic Compute
+**S (Situation):** Charles Schwab's deployment system was built on a legacy shell-based programme — hard to maintain, slow, and error-prone at scale.
+**T (Task):** Migrate the deployment platform to Python to improve maintainability and performance; deliver a platform that could handle the release cadence of a major brokerage.
+**A (Action):** Rebuilt modeas from shell to Python — designed for maintainability first (clean module separation, testable, observable), then optimised for throughput. Treated it as an internal product: versioned, tested, with its own observability and self-service provisioning.
+**R (Result):** 200+ builds/deployments per hour; 10,000+ ops hours eliminated annually; deployment cadence improved by 600%. Platform is maintainable by the team without specialist knowledge.
+**Reflection:** Automation platforms need product-level thinking — version control, testing, observability. And the first question is always maintainability, not throughput. A fast system nobody can debug is a liability.
+
+---
+
+### [FinOps] BMO AWS Cost Optimisation Programme
+**Source:** Report #090 — Teradata — Sr Principal Architect, Elastic Compute
+**S (Situation):** BMO's AWS bill grew unchecked after the cloud migration; there was no cost attribution or rightsizing discipline.
+**T (Task):** Own cloud cost transparency and waste elimination for the BMO AWS estate.
+**A (Action):** Identified obsolete and unused resources; rightsized workloads to actual demand; implemented tagging taxonomy for cost attribution by team and workload.
+**R (Result):** Measurable reduction in cloud waste; improved infrastructure cost efficiency; engineering teams started making cost-conscious deployment decisions.
+**Reflection:** FinOps requires cultural change, not just tooling. Engineers need to see the cost of their deployment choices in real time — make it visible and they will optimise it naturally.
 <!-- Format:
 ### [Theme] Story Title
 **Source:** Report #NNN — Company — Role
@@ -109,3 +139,32 @@ This file accumulates your best interview stories over time. Each evaluation (Bl
 **R:** SRE function gained strategic visibility; error budget concept adopted by product leadership.
 **Reflection:** Non-technical executives respond to risk and cost language, not uptime percentages — always translate before presenting.
 **Best for questions about:** Stakeholder communication, influencing without authority, executive presence
+
+### [Resilience Engineering] Chaos Engineering Programme at ADP — Keptn
+**Source:** Report #095 — Citi — DevOps Application Support Manager, VP
+**S:** ADP's SRE team had no proactive fault injection capability; platform reliability was only discovered under production failure conditions.
+**T:** Establish a chaos engineering programme to surface fault scenarios before they reached users.
+**A:** Deployed Keptn-based chaos testing framework; defined fault scenarios (network partition, pod eviction, latency injection); ran quarterly wargaming sessions with the SRE team; built pre-test runbooks for every fault scenario tested.
+**R:** Proactively identified and hardened 12+ failure scenarios; reduced production surprises during high-traffic and incident peaks.
+**Reflection:** Chaos engineering only works if there is a known recovery playbook before you inject the fault. Build the runbook first, validate the recovery path, then run the test — not the other way around.
+**Best for questions about:** Resilience, chaos engineering, proactive reliability, disaster recovery, SRE maturity
+
+### [Platform Product Management] CPMI + DevOps as a Service — Internal Platform Ownership
+**Source:** Report #101 — Northern Trust — Global Head of Platform Engineering
+**S (Situation):** Three concurrent banking clients (ADP, Schwab, BMO) had no shared standard for measuring or improving platform engineering maturity; each was at a different level with no common language.
+**T (Task):** Create a shared framework and product that clients would adopt voluntarily — not because they were told to.
+**A (Action):** Designed the Cloud Platform Maturity Index (CPMI) — a scored maturity model with an adoption playbook, tooling recommendations, and a DevOps as a Service catalogue. Built it as an internal product with its own roadmap and versioning, not as a one-off delivery.
+**R (Result):** Adopted across all three clients; measurable improvement in cloud capability, security posture, and automation maturity; CPMI became the shared language for engineering capability conversations with client leadership.
+**Reflection:** Internal platforms succeed when they solve the developer's problem first. I made the CPMI scoring immediately actionable — every tier told you what to do next, not just where you stood.
+**Best for questions about:** Platform product management, internal tooling, developer experience, influence without authority, roadmap ownership
+
+---
+
+### [AI Platform Operations] BMO GenAI Assistants — AWS Bedrock
+**Source:** Report #095 — Citi — DevOps Application Support Manager, VP
+**S:** BMO's risk analysis teams spent significant manual effort reviewing and summarising structured risk reports; no AI tooling was in place.
+**T:** Design and deploy GenAI assistants to reduce manual analysis effort and accelerate insights delivery within BMO's compliance perimeter.
+**A:** Built GenAI assistants using AWS Bedrock; integrated BCRG and LTS risk data pipelines; enabled interactive Q&A over structured risk reports; designed audit trail and explainability layers for compliance.
+**R:** Reduced manual analysis effort measurably; risk teams accelerated insights delivery; assistant deployed within regulatory and data governance constraints.
+**Reflection:** In banking, the AI is the easy part. The real work is data governance, audit trail, and explainability — design those first or you will not get past the compliance review.
+**Best for questions about:** GenAI in production, AI platform operations, regulated AI deployment, banking AI use cases
