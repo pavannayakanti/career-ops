@@ -1,7 +1,7 @@
-# Personal data (user fills these)
-cv.md
-data/applications.md
+# Personal data (user fills these) — tracked in fork for cross-machine sync
+# cv.md              ← tracked
 data/applications.db
+<<<<<<< HEAD
 data/follow-ups.md
 data/salary-observations.tsv
 data/status-log.tsv
@@ -14,15 +14,24 @@ data/pdf-index.tsv
 data/agent-inbox.md
 data/active-interviews.md
 data/reply-candidates.json
+=======
+# data/applications.md  ← tracked
+# data/pipeline.md      ← tracked
+# data/scan-history.tsv ← tracked
+>>>>>>> 09037a95b8e8ee071aabf2da775230f23280f626
 data/parser-output/**/*.json
 !data/parser-output/.gitkeep
 !data/parser-output/**/.gitkeep
 data/cache/ats-companies/
+<<<<<<< HEAD
 # Received offers/contracts, promise notes, prep reports (PII — never commit)
 data/offers/*
 !data/offers/.gitkeep
 data/upskill/
 reports/*.md
+=======
+# reports/*.md          ← tracked
+>>>>>>> 09037a95b8e8ee071aabf2da775230f23280f626
 !reports/.gitkeep
 output/*
 !output/.gitkeep
@@ -35,6 +44,7 @@ batch/tracker-additions/**/*.tsv
 jds/*
 !jds/.gitkeep
 
+<<<<<<< HEAD
 # Personal documents — never commit scans or copies of these (PII).
 # Catches common identity/credential filenames so they can't be staged by accident.
 *passport*
@@ -46,6 +56,10 @@ jds/*
 # Interview prep (accumulated STAR+R stories — user data)
 interview-prep/*
 !interview-prep/
+=======
+# Interview prep (accumulated STAR+R stories — user data, tracked)
+# interview-prep/*   ← tracked
+>>>>>>> 09037a95b8e8ee071aabf2da775230f23280f626
 !interview-prep/.gitkeep
 # Session transcripts hold real interviewer names/companies — ignore content,
 # ship only the system-owned scaffold (README + .gitkeep). #1242
@@ -54,10 +68,11 @@ interview-prep/sessions/*
 !interview-prep/sessions/.gitkeep
 !interview-prep/sessions/README.md
 
-# Writing samples (user's personal files — never committed)
-writing-samples/*
+# Writing samples (user's personal files — tracked)
+# writing-samples/*  ← tracked
 !writing-samples/README.md
 
+<<<<<<< HEAD
 # User config and customization (never auto-updated)
 config/profile.yml
 config/cv-facts.json
@@ -65,6 +80,12 @@ config/benchmarks.yml
 portals.yml
 modes/_profile.md
 modes/_custom.md
+=======
+# User config and customization — tracked in fork for cross-machine sync
+# config/profile.yml ← tracked
+# portals.yml        ← tracked
+# modes/_profile.md  ← tracked
+>>>>>>> 09037a95b8e8ee071aabf2da775230f23280f626
 .update-dismissed
 .update-lock
 
