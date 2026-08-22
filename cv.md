@@ -44,6 +44,8 @@ Aspiring to contribute at VP level — shaping strategy, cultivating engineering
 
 **DevSecOps & Code Quality:** SonarQube, JFrog Artifactory, SAST/DAST/IAST scanning, UrbanCode Deploy, Jenkins, Azure DevOps, shift-left security integration
 
+**Secrets Management:** HashiCorp Vault, AWS Secrets Manager
+
 **RPA & Automation:** Blue Prism, UiPath, Automation Anywhere, Python Automation, CPA/IPA Frameworks
 
 **Data & BI:** SAP HANA, Tableau, Power BI
@@ -74,6 +76,7 @@ Led cloud practice across pre-sales, solution architecture, and delivery for maj
 
 **Team Building & Leadership:**
 - Scaled ADP's SRE organization from 4 to 40 engineers and architects across India, Canada, and the US.
+- Led through a management layer at ADP, with 4 managers reporting directly as the SRE organisation scaled.
 - Led the Platform Engineering team within Charles Schwab's Build, Tools & Infrastructure (BT&I) division (12-15 members spanning IRIS and partner organisations), establishing foundational SRE practices, reliability reviews, and incident governance.
 - Conducted quarterly enterprise-wide training sessions for up to 200 participants per 20-hour session, scaling SRE and DevOps capability across the organisation.
 - Presented reliability strategies, SRE metrics, resiliency architectures, and incident outcomes directly to VP and C-suite stakeholders at ADP, Charles Schwab, and BMO.
@@ -82,6 +85,7 @@ Led cloud practice across pre-sales, solution architecture, and delivery for maj
 - Led modeas (Modernization of ODEAS) within Charles Schwab's Build, Tools & Infrastructure (BT&I) division — rewrote the entire ODEAS deployment programme from Shell to Python, removing individual contributor dependencies (Shell complexity had concentrated change knowledge in a few people; Python made the codebase accessible and maintainable by the broader team) while delivering 200+ builds/hr and accelerating deployment cadence by 600%.
 - Architected enterprise-grade tooling including the Cloud Platform Maturity Index (CPMI) and DevOps as a Service, driving measurable cloud capability and automation maturity across clients.
 - Led CI/CD workflow optimisations, Terraform-driven IaC, and self-healing system implementations, improving release velocity and operational resilience to 99.9%.
+- Implemented policy-as-code for infrastructure-as-code security at ADP SRE, adopting the KICS scanner with policies written in Rego.
 - Spearheaded migration of critical business applications for BMO's CCB, overseeing engineering efforts and architectural compliance.
 - Led end-to-end on-premise to AWS cloud migration for BMO, delivering CDK-enabled deployment pipelines for .NET applications across ECS Fargate containers and Lambda functions — with High Availability and Disaster Recovery built into the architecture from day one; managed VMware vSphere virtualised workloads as part of ADP's hybrid infrastructure platform prior to cloud migration.
 - Drove AWS FinOps practices for BMO — identifying obsolete, unused, and underutilised resources; rightsizing workloads to match actual demand; reducing cloud waste and improving cost efficiency across the AWS estate.
@@ -121,6 +125,7 @@ Led cloud practice across pre-sales, solution architecture, and delivery for maj
 - Embedded Run the Bank (RTB) and Change the Bank (CTB) principles across RBC's engineering delivery model — establishing strict environment segregation between production and non-production while maintaining continuous, frictionless deployment cadence through the Robo Deployment Framework and governed CI/CD pipelines.
 - Governed enterprise-wide DevOps and change management across 250+ applications — standardising deployment workflows, enforcing SOX/GDPR compliance, and ensuring audit-ready change transparency.
 - Designed and delivered the Robo Deployment Framework — a PowerShell-native CI/CD orchestration platform enabling self-service release pipelines for Windows services, database deployments (SSIS, Oracle, SQL Server), and enterprise application workloads.
+- Drove adoption of HashiCorp Vault for secrets management at RBC Insurance.
 - Automated artifact retrieval and approval workflows using Python and Ansible — eliminating manual intervention and establishing compliant change evidence pipelines.
 - Led enterprise migration of 250+ applications across 60+ teams from CA SCM/Harvest to GitHub, enabling modern CI/CD, agile collaboration, and self-service provisioning at scale.
 
@@ -170,6 +175,7 @@ Led cloud practice across pre-sales, solution architecture, and delivery for maj
 - Owned all non-functional objectives (performance, availability, scalability, security) alongside functional quality — defining and enforcing standards across network, infrastructure, and application tiers to achieve sustained 99.99% uptime over a 7-year tenure.
 - Built and led QA automation frameworks integrated with CI/CD pipelines, embedding automated regression, service virtualisation, and performance testing into release gates — eliminating manual testing bottlenecks and accelerating release confidence.
 - Managed production operations end-to-end: incident response, RCA, infrastructure administration (Windows and Linux), and cross-team coordination to maintain zero customer-impacting incidents over a sustained period.
+- Operated SAN-backed storage for production SQL Server estates, mirroring terabytes of data across multiple servers to publish Sales & Marketing business data for global subsidiaries.
 - Partnered with product and infrastructure teams in an Agile environment to define reliability targets, manage error budgets, and align quality objectives to business outcomes for global sales operations.
 - Modernised marketing platforms through cloud migration and self-healing architectures, supporting 200% user growth with no degradation in platform reliability or quality coverage.
 
@@ -210,7 +216,6 @@ Led cloud practice across pre-sales, solution architecture, and delivery for maj
 
 ## Certifications
 
-- Certified SRE (iSRE)
 - ITIL® Certificate in IT Service Operations
 - AWS Certified Solutions Architect – Associate (SAA-C01) — 2026
 - Google Cloud Certified — Professional Cloud Architect (PCA) — 2026
